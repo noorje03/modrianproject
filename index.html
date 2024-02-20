@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .container{
+      width: 748px;
+      height: 748px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 0.5fr;
+      grid-template-rows: 2fr 0.5fr 0.5fr 0.25fr;
+      
+      
+      
+      
+    }
+    .red{
+      background-color: #E72F24;
+      width: 320px;
+      height: 414px;
+      border: 9px solid #000;
+      border-right: 0;
+    }
+    .blue{
+      background-color:#004592;
+      width: 50px;
+      height: 130px;
+      grid-area: 2 / 4 / 3/ 5;
+      border: 9px solid #000;
+      border-width: 0 0 10px 0 ;
+    }
+    .black{ 
+      background-color:#232629 ;
+      grid-area: 4 / 3 / 5 / 4;
+      width: 153px;
+      height: 20px;
+      border: 9px solid #000;
+      border-bottom: 0;
+      border-top: 0;
+    }
+    .yellow{
+      background-color: #F9D01E; 
+      grid-area: 4 / 2 / 5 / 3;
+      width: 198px;
+      height: 20px;
+      border: 9px solid #000;
+      border-bottom: 0;
+      border-top: 0;
+    }
+      .white{
+        background-color: #F0F1EC;
+        border: 9px solid #000;
+        
+      }
+    /* 
+    Write your CSS here 
+    Gap Colour:
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .first{
+      grid-area: 1 /2 / 2 / -1;
+      border-top: 0;
+      border-right: 0;
+      
+    }
+    .second{
+      grid-area: 2 / 1 / -2 / 2;
+      border-left: 0;
+      border-top: 0;
+      border-right: 0;
+    }
+    .third{
+      grid-area: 2 / 2 / 4 / 4;
+      border-top: 0;
+    }
+    .fifth{
+      border-left:0 ;
+      border-bottom: 0;
+      border-right: 0;
+      border-top: 0;
+    }
+    .fourth{
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 0;
+      width: 50px;
+      height: 155px;
+    }
+    .sixth{
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 0;
+      border-left:0 ;
+      width: 50px;
+      height: 20px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+    <div class="white first"></div>
+    <div class="white second"></div>
+    <div class="white third"></div>
+    <div class="white fourth"></div>
+    <div class="white fifth"></div>
+    <div class="white sixth"></div>
+  </div>
+
+</body>
+
+</html>
